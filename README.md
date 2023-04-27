@@ -1,7 +1,7 @@
-# Hallo!
-- Friends, I am _Mayank_.
+Hallo!
+_Friends_, I am #Mayank.
  
 - i like Developing Website & Program
-  and learn new things.
+- i have learn by experience & practical implementation.
 - i have do some Projects.
 - it great when you like it.
