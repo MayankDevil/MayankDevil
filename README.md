@@ -11,4 +11,4 @@
 
 [Profile] (https://mastermayank.w3space.com)
 
-> " if you have found good choice find better one and choice best "
+> " have any good choice find better one and choose best "
