@@ -7,7 +7,7 @@
 - I am looking to collaborate on represent my country in technology field
 - I have do some [Projects]( https://mastermayank.w3spaces.com ).
 
-> " have any good choice find better one and choose best "
+> " Every day we change the world. But to change the world in a way that means anything that takes more time that most people have "
 
 ```
 https://mastermayank.w3spaces.com
