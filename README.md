@@ -10,5 +10,4 @@
 > " Every day we change the world. But to change the world in a way that means anything that takes more time that most people have "
 
 ```
-https://mastermayank.w3spaces.com
 ```
