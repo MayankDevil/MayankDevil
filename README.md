@@ -1,17 +1,15 @@
 # Hi, I am _Mayank_! 👋
 
 
-👩‍💻 - I'm currently working on **CRUD**
+_Every day we change the world. But to change the world in a way that means is anything that takes more time that most people have_
 
-🧠   - I'm currently learning _ReactJS & PHP_
-
-👯‍♀️  - I'm looking to collaborate on Your Class Group Java Programmes
-
-🤔  - I'm looking for help with Project
-
-💬  -  Ask me about Web Development
 
 <!--
+👩‍💻 - I'm currently working on **CRUD**
+🧠   - I'm currently learning _ReactJS & PHP_
+👯‍♀️  - I'm looking to collaborate on Your Class Group Java Programmes
+🤔  - I'm looking for help with Project
+💬  -  Ask me about Web Development
 😄     Pronouns me Master
 📫     How to reach me
 ⚡️     Fun fact 
@@ -55,5 +53,3 @@ Basic Knowlegde of GIMP
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/MasterMayank/)
 
 <!--  Message -->
-
-_Every day we change the world. But to change the world in a way that means is anything that takes more time that most people have_
