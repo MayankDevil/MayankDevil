@@ -1,7 +1,9 @@
 # Hi, I am _Mayank_! 👋
 
 ## 🚀 About Me
-I'm a full stack developer...
+
+I like Developing Website & Program.
+I have learn by experience & practical implementation.
 
 <!--
 
@@ -48,11 +50,6 @@ To deploy this project run
 ![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
 
 -->
-- I like Developing Website & Program.
-- I have learn by experience & practical implementation.
-- I am looking to collaborate on represent my country in technology field
-- I have do some [Projects]( https://mastermayank.w3spaces.com ).
-
 
 
 > " Every day we change the world. But to change the world in a way that means is anything that takes more time that most people have "
@@ -70,4 +67,11 @@ Basic Knowlegde of GIMP
 ## 🔗 Links
 
 [![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://mastermayank.w3spaces.com/)
+
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/MasterMayank/)
+
+## Projects
+
+[Indardanus](https://mayankdevil.github.io/website-0/)
+
+[Entity Code](https://mayankdevil.github.io/website-8/)
