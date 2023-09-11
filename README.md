@@ -1,51 +1,35 @@
 # Hi, I am _Mayank_! 👋
 
 
-👩‍💻   I'm currently working on PHP
+👩‍💻   I'm currently working on **CRUD**
 
-🧠     I'm currently learning ReactJS & PHP
+🧠     I'm currently learning _ReactJS & PHP_
 
 👯‍♀️    I'm looking to collaborate on Your Class Group Java Programmes
 
-🤔     I'm looking for help with...
+🤔     I'm looking for help with Project
 
-💬      Ask me about Web Development
-
-📫      How to reach me...
-
-😄      Pronouns me Master
-
-⚡️       Fun fact I am Student
+💬     Ask me about Web Development
 
 <!--
-## 🔗 Links
-[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://katherineoelsner.com/)
-[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/)
-[![twitter](https://img.shields.io/badge/twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/)
-
-## 🛠 Skills
-
-Javascript, HTML, CSS...
-
-## Deployment
-
-To deploy this project run
+😄     Pronouns me Master
+📫     How to reach me
+⚡️     Fun fact 
 
 ```bash
   npm run deploy
 ```
 
-## Documentation
+## Projects
 
-[Documentation](https://linktodocumentation)
+[Indardanus](https://mayankdevil.github.io/website-0/)
+[Entity Code](https://mayankdevil.github.io/website-8/)
 
 ## Screenshots
 
 ![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
 
 -->
-
-    " Every day we change the world. But to change the world in a way that means is anything that takes more time that most people have "
 
 ## 🚀 About Me
 
@@ -64,12 +48,10 @@ Basic Knowlegde of GIMP
 
 ## 🔗 Links
 
+[![github](https://img.shields.io/badge/github-1DA1F2?style=for-the-badge&logo=github&logoColor=white)](https://github.io/MayankDevil/)
 [![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://mastermayank.w3spaces.com/)
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/MasterMayank/)
-[![github](https://img.shields.io/badge/twitter-1DA1F2?style=for-the-badge&logo=github&logoColor=white)](https://github.io/MayankDevil/)
 
-<!--
-## Projects
-[Indardanus](https://mayankdevil.github.io/website-0/)
-[Entity Code](https://mayankdevil.github.io/website-8/)
--->
+<!--  Message -->
+
+_Every day we change the world. But to change the world in a way that means is anything that takes more time that most people have_
