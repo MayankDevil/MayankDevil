@@ -1,15 +1,15 @@
 # Hi, I am _Mayank_! 👋
 
 
-👩‍💻   I'm currently working on **CRUD**
+👩‍💻 - I'm currently working on **CRUD**
 
-🧠     I'm currently learning _ReactJS & PHP_
+🧠   - I'm currently learning _ReactJS & PHP_
 
-👯‍♀️    I'm looking to collaborate on Your Class Group Java Programmes
+👯‍♀️  - I'm looking to collaborate on Your Class Group Java Programmes
 
-🤔     I'm looking for help with Project
+🤔  - I'm looking for help with Project
 
-💬     Ask me about Web Development
+💬  -  Ask me about Web Development
 
 <!--
 😄     Pronouns me Master
