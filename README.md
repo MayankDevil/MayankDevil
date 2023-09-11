@@ -1,23 +1,21 @@
 # Hi, I am _Mayank_! 👋
 
 
-## Other Common Github Profile Sections
+👩‍💻 I'm currently working on PHP
 
-👩‍💻 I'm currently working on...
+🧠 I'm currently learning ReactJS & PHP
 
-🧠 I'm currently learning...
-
-👯‍♀️ I'm looking to collaborate on...
+👯‍♀️ I'm looking to collaborate on Your Class Group Java Programmes
 
 🤔 I'm looking for help with...
 
-💬 Ask me about...
+💬 Ask me about Web Development
 
 📫 How to reach me...
 
-😄 Pronouns...
+😄 Pronouns me Master
 
-⚡️ Fun fact...
+⚡️ Fun fact I am Student
 
 <!--
 ## 🔗 Links
