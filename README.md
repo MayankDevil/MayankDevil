@@ -1,21 +1,21 @@
 # Hi, I am _Mayank_! 👋
 
 
-👩‍💻 I'm currently working on PHP
+👩‍💻   I'm currently working on PHP
 
-🧠 I'm currently learning ReactJS & PHP
+🧠     I'm currently learning ReactJS & PHP
 
-👯‍♀️ I'm looking to collaborate on Your Class Group Java Programmes
+👯‍♀️    I'm looking to collaborate on Your Class Group Java Programmes
 
-🤔 I'm looking for help with...
+🤔     I'm looking for help with...
 
-💬 Ask me about Web Development
+💬      Ask me about Web Development
 
-📫 How to reach me...
+📫      How to reach me...
 
-😄 Pronouns me Master
+😄      Pronouns me Master
 
-⚡️ Fun fact I am Student
+⚡️       Fun fact I am Student
 
 <!--
 ## 🔗 Links
@@ -45,13 +45,12 @@ To deploy this project run
 
 -->
 
-
-### " Every day we change the world. But to change the world in a way that means is anything that takes more time that most people have "
+    " Every day we change the world. But to change the world in a way that means is anything that takes more time that most people have "
 
 ## 🚀 About Me
 
-I like Developing Website & Program.
-I have learn by experience & practical implementation.
+-   I like Developing Website & Program.
+-   I have learn by experience & practical implementation.
 
 ## 🛠 Skills
 
