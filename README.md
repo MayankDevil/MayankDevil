@@ -1,13 +1,8 @@
 # Hi, I am _Mayank_! 👋
 
-## 🚀 About Me
-
-I like Developing Website & Program.
-I have learn by experience & practical implementation.
-
-<!--
 
 ## Other Common Github Profile Sections
+
 👩‍💻 I'm currently working on...
 
 🧠 I'm currently learning...
@@ -24,13 +19,14 @@ I have learn by experience & practical implementation.
 
 ⚡️ Fun fact...
 
-
+<!--
 ## 🔗 Links
 [![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://katherineoelsner.com/)
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/)
 [![twitter](https://img.shields.io/badge/twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/)
 
 ## 🛠 Skills
+
 Javascript, HTML, CSS...
 
 ## Deployment
@@ -52,7 +48,12 @@ To deploy this project run
 -->
 
 
-> " Every day we change the world. But to change the world in a way that means is anything that takes more time that most people have "
+### " Every day we change the world. But to change the world in a way that means is anything that takes more time that most people have "
+
+## 🚀 About Me
+
+I like Developing Website & Program.
+I have learn by experience & practical implementation.
 
 ## 🛠 Skills
 
@@ -67,11 +68,11 @@ Basic Knowlegde of GIMP
 ## 🔗 Links
 
 [![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://mastermayank.w3spaces.com/)
-
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/MasterMayank/)
+[![github](https://img.shields.io/badge/twitter-1DA1F2?style=for-the-badge&logo=github&logoColor=white)](https://github.io/MayankDevil/)
 
+<!--
 ## Projects
-
 [Indardanus](https://mayankdevil.github.io/website-0/)
-
 [Entity Code](https://mayankdevil.github.io/website-8/)
+-->
