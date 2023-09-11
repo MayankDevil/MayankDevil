@@ -40,9 +40,11 @@
 
 Typing Speed [ 40wpm ]
 
-Fontend { HTML | CSS | JavaScript }
+Fontend Developement { HTML | CSS | JavaScript }
 
 Java Core Programming
+
+mySQL Database Query
 
 Basic Knowlegde of GIMP
 
