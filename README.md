@@ -36,7 +36,7 @@ _Every day we change the world. But to change the world in a way that means is a
 
 ## 🛠 Skills
 
-Typing Speed [ 40wpm ]
+Typing Speed [ __40wpm__ ]
 
 Fontend Developement { __HTML__ | __CSS__ | __JavaScript__ }
 
