@@ -46,7 +46,7 @@ __Java__ Core Programming
 
 __mySQL__ Database Query
 
-how to use __Git__
+how to use __Git__, I know
 
 Basic Knowlegde of __GIMP__
 
