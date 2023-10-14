@@ -50,6 +50,8 @@ how to use __Git__
 
 Basic Knowlegde of __GIMP__
 
+Work experience with __Linux__ OS
+
 ## 🔗 Links
 
 [![github](https://img.shields.io/badge/github-1DA1F2?style=for-the-badge&logo=github&logoColor=white)](https://github.io/MayankDevil/)
