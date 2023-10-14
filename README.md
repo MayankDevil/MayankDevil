@@ -38,13 +38,17 @@ _Every day we change the world. But to change the world in a way that means is a
 
 Typing Speed [ 40wpm ]
 
-Fontend Developement { HTML | CSS | JavaScript }
+Fontend Developement { __HTML__ | __CSS__ | __JavaScript__ }
 
-Java Core Programming
+Backend Developement { __PHP__ }
 
-mySQL Database Query
+__Java__ Core Programming
 
-Basic Knowlegde of GIMP
+__mySQL__ Database Query
+
+how to use __Git__
+
+Basic Knowlegde of __GIMP__
 
 ## 🔗 Links
 
