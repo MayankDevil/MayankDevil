@@ -1,8 +1,6 @@
-# Hi, I am  _Mayank_ ! 👋
-
+# Hi, I am Mayank ! 👋
 
 _Every day we change the world. But to change the world in a way that means is anything that takes more time that most people have_
-
 
 <!--
 👩‍💻 - I'm currently working on **CRUD**
