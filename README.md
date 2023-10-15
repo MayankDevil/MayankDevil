@@ -1,6 +1,6 @@
 # Hi, I am Mayank ! 👋
 >
-> **Every day we change the world. But the proper way to change the world, that influences mostly think that takes more time.**
+**Every day we change the world. But the proper way to change the world, that influences mostly think that takes more time.**
 >
 <!--
 👩‍💻 - I'm currently working on **CRUD**
