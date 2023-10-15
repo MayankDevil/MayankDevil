@@ -1,6 +1,6 @@
 # Hi, I am Mayank ! 👋
 
-_Every day we change the world. But to change the world in a way that means is anything that takes more time that most people have_
+_Every day we change the world. But the proper way to change the world, that we called actually changes that takes more time and influence mostly._
 
 <!--
 👩‍💻 - I'm currently working on **CRUD**
