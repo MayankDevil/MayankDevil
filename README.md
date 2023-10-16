@@ -24,7 +24,7 @@ how to use __Git__, I know
 
 Basic Knowlegde of __GIMP__
 
-Work experience with __Linux__ OS
+Work experience with __Linux__ & __Windows__ OS
 
 ## 🔗 Links
 
