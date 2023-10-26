@@ -1,4 +1,4 @@
-# Hi, 👋  I am मयंक !
+# Hi, 👋  I am Mayank!
 
 **Every day we change the world. But the proper way to change the world, that influences mostly think that takes more time.**
 
