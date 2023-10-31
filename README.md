@@ -1,6 +1,6 @@
 # Hi, 👋  I am Mayank!
 
-**Every day we change the world. But the proper way to change the world, that influences mostly think that takes more time.**
+**"Each day, we have the power to impact the world, but the most profound change, the kind that truly resonates, often requires patience and time."**
 
 <!-- प्रतिदिनं वयं जगत् परिवर्तयामः। परन्तु जगत् परिवर्तयितुं सम्यक् मार्गः, तत् प्रभावं अधिकतया चिन्तयति यत् अधिकं समयं लभते। -->
 
