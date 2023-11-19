@@ -12,9 +12,11 @@
 
 ## 🛠 Skills
 
-Typing Speed [ __40wpm__ ]
+Typing Speed [ __40wpm__ ] minimum 
 
 Fontend Developement { __HTML__ | __CSS__ | __JavaScript__ }
+
+Handling __Bootstrap__ Layout
 
 Backend Developement { __PHP__ }
 
