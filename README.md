@@ -7,7 +7,7 @@
 ## 🚀 About Me
 
 -   A passionate Developer from **India**.
--   I like Developing Website & Program.
+-   I like Developing Website & Programming.
 -   I have learn by experience & practical implementation.
 
 ## 🛠 Skills
