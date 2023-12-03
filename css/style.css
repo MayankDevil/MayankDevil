@@ -1,0 +1,262 @@
+/*
+-   Portfolio ""
+-   https://github.com/MayankDevil/
+-   Designed & Developed by Mayank
+-   CSS : ./css/style.css
+*/
+a{
+    text-decoration: none;
+}
+/*
+    -------------------
+    | Bootstrap Icons |
+    -------------------
+*/
+@import "../css/bootstrap-icons.min.css";
+
+.bi
+{
+    font-size: 1rem;
+}
+.btn:hover
+{
+    box-shadow: 1px 1px 5px var(--bs-gray);
+}
+/*
+    nav css ------------------------------
+*/
+#navbar
+{
+    top:0;
+    left:0;
+    z-index: 10;
+}
+#brand
+{
+    padding: 0.5rem 1rem;
+}
+.nav-link
+{
+    color:var(--bs-light);
+}
+.nav-link span
+{
+    color:var(--bs-info);
+}
+.nav-item
+{
+    padding: 0.5rem 1rem;
+}
+.nav-item:hover
+{
+    background: var(--bs-light);
+}
+.nav-item:hover .nav-link
+{
+    color:var(--bs-dark);
+}
+.nav-item:hover .nav-link > span
+{
+    color:var(--bs-danger);
+}
+/*
+    header css ---------------------------
+*/
+#header .display-5::after
+{
+    content: 'Mayank';
+    animation: write linear 6 1s alternate;
+}
+@keyframes write
+{
+    5%{
+        content:'Mayank';
+    }
+    15%{
+        content:'Mayan';
+    }
+    35%{
+        content:'Maya';
+    }
+    50%{
+        content:'May';
+    }
+    75%{
+        content:'Ma';
+    }
+    100%{
+        content:'M';
+    }    
+}
+
+#selfy
+{
+    box-shadow: 5 5px 10px var(--bs-gray);
+}
+.popup
+{
+    transform:scale(0.9);
+    animation: popup linear infinite 2s alternate;
+}
+@keyframes popup
+{
+    form{
+        transform: scale(0.9);
+    }to{
+        transform: scale(1);
+    }
+}
+/*
+    archievement css ---------------------
+*/
+#achievement
+{
+    background: linear-gradient(60deg, );
+}
+#achievement .h5
+{
+    writing-mode: sideways-lr;
+    letter-spacing: 2px;
+}
+.shade
+{
+    background: var(--bs-dark);
+    clip-path: polygon(91% 44%, 92% 27%, 100% 0, 100% 100%, 0 100%, 19% 94%, 34% 90%, 44% 76%, 64% 76%, 81% 68%);
+}
+#achievement .bi
+{
+    font-size: 2rem;
+}
+#btn-next
+{
+    width: 50px;
+    background: linear-gradient(to right,transparent,var(--bs-secondary-bg-subtle));
+}
+.bi-chevron-compact-right
+{
+    font-size: 3rem;
+    color:var(--bs-primary) !important;
+}
+.bi-arrow-right
+{
+    font-size: 4rem;
+    color:var(--bs-secondary)
+}
+/*
+    roadmap css --------------------------
+*/
+#roadmap .alert
+{
+    border-radius: 1rem 1rem 1rem 0;
+}
+.road-icon
+{
+    /* display: ; */
+    padding:1rem;
+    font-size: 2rem;
+}
+.bold
+{
+    font-weight: bolder;
+}
+/*
+    service css --------------------------
+*/
+.service-icon
+{
+    font-size: 3rem;
+    color:var(--bs-orange);
+    opacity:0.7;
+}
+.head-icon
+{
+    margin-right: 1rem;
+    font-size: 2rem;
+    color:var(--bs-blue);
+    opacity: 0.7;
+}
+.serve:hover
+{
+    box-shadow: 2px 2px 5px var(--bs-gray);    
+}
+.bi-check-circle
+{
+    font-size: 1.2rem;
+    color:var(--bs-form-valid-border-color);
+}
+.bi-x-circle
+{
+    font-size: 1.2rem;
+    color:var(--bs-form-invalid-color);
+}
+/*
+    testimonial css ----------------------
+*/
+.client-image
+{
+    clip-path: circle(50%);
+}
+.text-orange
+{
+    color:var(--bs-orange);
+}
+.qoute
+{
+    font-size: 1rem;
+    color:var(--bs-info);
+}
+/*
+    contact css --------------------------
+*/
+/*
+    footer css ---------------------------
+*/
+/*
+    =========================================
+    } Responsive meadia query
+    =========================================
+*/
+
+@media screen and (max-width:1400px)
+{}
+@media screen and (max-width:1200px)
+{}
+@media screen and (max-width:992px)
+{
+    #roadmap .row
+    {
+        border-left:1px solid var(--bs-dark) !important;
+    }
+    #roadmap .row div
+    {
+        margin: 0.5rem auto;
+        border-radius: 1rem 0 0 2rem;
+    }
+    #roadmap .row > div::after
+    {
+        margin-left: -1rem;
+        content:'';
+        padding:0px 15px;
+        border-bottom: 2px solid var(--bs-dark) !important;
+        border-right: 2px solid var(--bs-dark) !important;
+    }
+    .road-icon
+    {
+        /* display: block; */
+        padding:1rem 2rem;
+        font-size: 2rem;
+    }
+}
+@media screen and (max-width:768px)
+{
+    #achievement .h5
+    {
+        writing-mode:horizontal-tb;
+        letter-spacing: 2px;
+    }
+}
+@media screen and (max-width:576px)
+{}
+/*
+    the end ==================================
+*/
