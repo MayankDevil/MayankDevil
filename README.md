@@ -2,7 +2,7 @@
 
 # Hi, 👋  I am Mayank!
 
-__Each day, we have the power to impact the world, but the most profound change, the kind that truly resonates, often requires patience and time.__
+_Each day, we have the power to impact the world, but the most profound change, the kind that truly resonates, often requires patience and time._
 
 
 ## 🚀 About Me
