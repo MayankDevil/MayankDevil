@@ -1,0 +1,209 @@
+/*
+-   website 14 : "PROFILE"
+-   Profile CopyRight by Mayank
+-   Designed : Mayank
+-   Mayank All Right Reserved
+-   CSS : css/responsive
+*/
+
+/*
+    SCREEN 1200PX CSS -------------------
+*/
+@media screen and (max-width: 1200px)
+{
+    /* main */
+    section
+    {
+        max-width:900px;
+    }
+    /* introduction */
+    #introduction .row .col:first-child
+    {
+        padding: 1rem;
+    }
+}
+/*
+    SCREEN 992PX CSS -------------------
+*/
+@media (max-width: 992px)
+{
+    /* mother container */
+    #mother_container
+    {
+        display: block;
+        margin: 5vh 1rem;
+    }
+    /* intruduction */
+    #introduction .row
+    {
+        grid-template-columns: 1fr 1fr;
+    }
+    #introduction .row .col:first-child .selfi
+    {
+        height: auto;
+        width: 100%;
+        object-fit: contain;
+    }
+    #introduction .row .col:last-child
+    {
+        padding: 3rem 0 ;
+    }
+    /* contact */
+    #contact #social
+    {
+        grid-template-columns: 1fr;
+        margin: 3rem 1rem 3rem 3rem;
+        border-left:1px dotted var(--dark);
+    }
+    #contact #social .media
+    {
+        text-align: left;
+        border:none;
+    }
+    #contact #social .media .bi
+    {
+        margin-top: 0;
+        margin-left: -1.3rem;
+        font-size: 1.5em;
+    }
+    #contact #social .media .linkbox
+    {
+        display: block;
+        margin: 3rem 1rem 1rem 3rem;
+    }
+    #contact #social .media .linkbox::before
+    {
+        top:40%;
+        left:-1rem;
+    }
+}
+/*
+    SCREEN 768PX CSS -------------------
+*/
+@media (max-width: 768px)
+{
+    /* intruduction */
+    #introduction .row
+    {
+        grid-template-columns: 1fr;
+    }
+    #introduction .row .col:first-child
+    {
+        place-self: center;
+    }
+    #introduction .row .col:last-child
+    {
+        padding: 2rem 10%;
+    }
+    #introduction #next_btn
+    {
+        right:0;
+        top:40%;
+    }
+    /* project */
+    #project #search
+    {
+        width: 90%;
+    }
+    #project .folder
+    {
+        display: block;
+    }
+    #project .folder .look
+    {
+        position: relative;
+        z-index: 0;
+    }
+    #project .folder .detail
+    {
+        /* position: absolute; */
+        z-index: 5;
+        top: 0;
+        display: block;
+        /* background: var(--black); */
+        margin-right: 1rem;
+        border-right: 1px solid var(--gray);
+    }
+    #project .folder:hover :is(.look,.detail)
+    {
+        transition: all 1s ease-in;
+        border-right: 1px inset var(--primary);
+    }
+    /* contact */
+    #contact #social
+    {
+        margin: 3rem 0 3rem 3rem;
+    }
+}
+/*
+    SCREEN 576PX CSS -------------------
+*/
+@media (max-width: 576px)
+{
+    /* main */
+    #main
+    {
+        background: var(--white);
+    }
+    /* mother container */
+    #mother_container
+    {
+        display: block;
+        width: 100%;
+        background: transparent;
+        margin: 5vh auto;
+        box-shadow: none;
+    }
+    /* project */
+    #project .folder
+    {
+        padding: 1rem 0;
+        background: var(--white);
+    }
+    #project .folder .detail
+    {
+        padding: 1rem 0;
+    }
+    #project .folder .look::after
+    {
+        right: -0.7rem;
+        padding: 10px;
+        background: var(--white);
+        border: 1px solid var(--primary);
+        border-radius: 50%;
+    }
+    /* contact */
+    #contact #social
+    {
+        margin: 3rem 0 3rem 2rem;
+    }
+    #contact #social .media
+    {
+        text-align: left;
+        border:none;
+    }
+    #contact #social .media .linkbox
+    {
+        width: 80%;
+        margin: 2rem 1rem 2rem 1.5rem;
+    }
+    #contact #social .media .linkbox::before
+    {
+        left:-10px;
+        padding:10px;
+    }
+}
+/*
+    SCREEN 370PX CSS -------------------
+*/
+@media (max-width: 370px)
+{
+    /* intruduction */
+    #introduction .row .col:last-child
+    {
+        padding: 2rem 5%;
+    }
+}
+/*
+    THE END ============================
+*/
