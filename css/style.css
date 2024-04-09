@@ -38,32 +38,27 @@ a{
 .nav-link
 {
     color:var(--bs-light);
-}
-.nav-link span
-{
-    color:var(--bs-info);
+    border-bottom: 1px solid transparent;
 }
 .nav-item
 {
-    padding: 0.5rem 1rem;
+    padding: 0.5rem;
 }
 .nav-item:hover
 {
-    background: var(--bs-light);
+    background: var(--bs-dark);
 }
 .nav-item:hover .nav-link
 {
-    color:var(--bs-dark);
-}
-.nav-item:hover .nav-link > span
-{
-    color:var(--bs-danger);
+    font-weight:bold;
+    border-bottom: 1px solid var(--bs-blue);
 }
 /*
     header css ---------------------------
 */
 #header .display-5::after
 {
+    font-weight:normal;
     content: 'Mayank';
     animation: write linear 6 1s alternate;
 }
@@ -145,15 +140,40 @@ a{
 /*
     roadmap css --------------------------
 */
-#roadmap .alert
-{
-    border-radius: 1rem 1rem 1rem 0;
-}
 .road-icon
 {
-    /* display: ; */
     padding:1rem;
     font-size: 2rem;
+}
+#roadmap .map
+{
+    margin-top: 3rem;
+    border-top: 2px dotted var(--bs-gray) !important;
+}
+#roadmap .bi-check-circle
+{
+    display: inline-block;
+    margin-top:-2rem;
+    font-size: 2em;
+    color:var(--bs-blue);
+    background: var(--bs-white);
+}
+#roadmap .map div
+{
+    position: relative;
+    margin-top: 3rem;
+    background: var(--bs-light);
+}
+#roadmap .map div::before
+{
+    position: absolute;
+    top: -1rem;
+    left:45%;
+    transform: rotate(45deg);
+    display: inline-block;
+    content:'';
+    padding: 1rem;
+    background: var(--bs-light);
 }
 .bold
 {
@@ -164,8 +184,8 @@ a{
 */
 .service-icon
 {
-    font-size: 3rem;
-    color:var(--bs-orange);
+    font-size: 5em;
+    color:var(--bs-blue);
     opacity:0.7;
 }
 .head-icon
@@ -177,7 +197,10 @@ a{
 }
 .serve:hover
 {
-    box-shadow: 2px 2px 5px var(--bs-gray);    
+
+    transition:all 0.5s linear;
+    transform: translateY(-1rem);
+    box-shadow: 0 0 30px var(--bs-gray);
 }
 .bi-check-circle
 {
@@ -211,6 +234,11 @@ a{
 /*
     footer css ---------------------------
 */
+#developer
+{
+    font-size:large;
+    font-weight:bold;
+}
 /*
     =========================================
     } Responsive meadia query
@@ -223,28 +251,52 @@ a{
 {}
 @media screen and (max-width:992px)
 {
+    .nav-item
+    {
+
+    }
+    .nav-item:hover .nav-link
+    {
+        padding-left: 1rem;
+        border-bottom: 0px solid transparent;
+        border-left: 1px solid var(--bs-blue);
+    }
     #roadmap .row
     {
-        border-left:1px solid var(--bs-dark) !important;
+        display: grid;
+        padding: 1rem 0;
     }
-    #roadmap .row div
+    #roadmap .map
     {
-        margin: 0.5rem auto;
-        border-radius: 1rem 0 0 2rem;
+        text-align: left !important;
+        margin-top:0;
+        border: none !important;
+        border-left: 2px dotted var(--bs-gray) !important;
     }
-    #roadmap .row > div::after
+    #roadmap .bi-check-circle
     {
-        margin-left: -1rem;
+        display: inline-block;
+        margin-top: 0;
+        margin-left:-1.7rem;
+        font-size: 2em;
+        color:var(--bs-blue);
+        background: var(--bs-white);   
+    }
+    #roadmap .map div
+    {
+        margin-top: 1rem;
+        margin-left: 1.5rem;
+    }
+    #roadmap .map div::before
+    {
+        position: absolute;
+        top: 40%;
+        left:-1rem;
+        transform: rotate(45deg);
+        display: inline-block;
         content:'';
-        padding:0px 15px;
-        border-bottom: 2px solid var(--bs-dark) !important;
-        border-right: 2px solid var(--bs-dark) !important;
-    }
-    .road-icon
-    {
-        /* display: block; */
-        padding:1rem 2rem;
-        font-size: 2rem;
+        padding: 1rem;
+        background: var(--bs-light);
     }
 }
 @media screen and (max-width:768px)
