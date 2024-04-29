@@ -38,7 +38,7 @@ try
             collabrate : [`self`],
             techstack : ["HTML","CSS","JavaScript"],
             thanks : [`VSCodium`,`GitHub`,`GIMP`],
-            url : `https://mayankdevil.github.io/Inardanus`,
+            url : `https://mayankdevil.github.io/EntityCode`,
             download : ``,
             interface : `Web Application`,
             look : `EntityCode.png`
@@ -53,10 +53,40 @@ try
             collabrate : [`self`],
             techstack : ["HTML","CSS","JavaScript"],
             thanks : [`VSCodium`,`GitHub`,`GIMP`],
-            url : `https://mayankdevil.github.io/Employeement`,
+            url : `https://mayankdevil.github.io/EvilCorp/`,
             download : ``,
             interface : `Web Application`,
             look : `Employeement.png`
+        },
+        {
+            access : true,
+            version : 0,
+            name : `ProCoders`,
+            description : `ProCoder is a comprehensive online education plathform`,
+            status: `REST`,
+            responsive : true,
+            collabrate : [`self`],
+            techstack : ["HTML","CSS","JavaScript","Bootstrap"],
+            thanks : [`VSCodium`,`GitHub`,`GIMP`],
+            url : `https://mayankdevil.github.io/ProCoders`,
+            download : ``,
+            interface : `Web Application`,
+            look : `ProCoders.png`
+        },
+        {
+            access : true,
+            version : 0,
+            name : `GUPT`,
+            description : `College Final Year Max Project`,
+            status: `REST`,
+            responsive : true,
+            collabrate : [`self`],
+            techstack : ["HTML","CSS","JavaScript","Bootstrap"],
+            thanks : [`VSCodium`,`GitHub`,`GIMP`],
+            url : `https://mayankdevil.github.io/Project-2`,
+            download : ``,
+            interface : `Web Application`,
+            look : `gupt.png`
         }
     ]
     
