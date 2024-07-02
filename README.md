@@ -34,7 +34,7 @@ Work experience with __Linux__ & __Windows__ OS
 ## 🔗 Links
 
 [![github](https://img.shields.io/badge/github-black?style=for-the-badge&logo=github&logoColor=white)](https://github.io/MayankDevil/)
-[![portfolio](https://img.shields.io/badge/my_portfolio-crimson?style=for-the-badge&logo=ko-fi&logoColor=white)](https://mastermayank.w3spaces.com/)
+[![portfolio](https://img.shields.io/badge/my_portfolio-crimson?style=for-the-badge&logo=ko-fi&logoColor=white)](https://mayankdevil.github.io/MayankDevil/)
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/MasterMayank/)
 
 <!-- author is mayank -->
