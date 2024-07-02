@@ -23,7 +23,7 @@ try
             collabrate : [`self`],
             techstack : ["HTML","CSS","JavaScript"],
             thanks : [`VSCodium`,`GitHub`,`GIMP`],
-            url : `https://mayankdevil.github.io/Inardanus`,
+            url : `https://mayankdevil.github.io/Indardanus`,
             download : ``,
             interface : `Web Application`,
             look : `Indardanus.png`
@@ -57,6 +57,21 @@ try
             download : ``,
             interface : `Web Application`,
             look : `Employeement.png`
+        },
+        {
+            access : true,
+            version : 2,
+            name : `Tourism Website `,
+            description : `Create Imagination Tourism website for competition`,
+            status: `REST`,
+            responsive : true,
+            collabrate : [`self`],
+            techstack : ["HTML","CSS","JavaScript","BootStrap"],
+            thanks : [`VSCodium`,`GitHub`,`GIMP`,`Bootstrap`],
+            url : `https://github.com/MayankDevil/Tourism_website`,
+            download : ``,
+            interface : `Web Application`,
+            look : `tourismHome.png`
         },
         {
             access : true,
