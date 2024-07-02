@@ -61,6 +61,21 @@ try
         {
             access : true,
             version : 2,
+            name : `Cyber Law Website`,
+            description : `Navigate cyber law with precision. Discover the impact of the 2008 IT Amendment Act at CyberLaw.`,
+            status: `REST`,
+            responsive : false,
+            collabrate : [`self`],
+            techstack : ["HTML","CSS","JavaScript",],
+            thanks : [`VSCodium`,`GitHub`,`Unplash`,`MayankDevil'],
+            url : `https://mayankdevil.github.io/CyberLaw/`,
+            download : ``,
+            interface : `Web Application`,
+            look : `CyberLaw.png`
+        },
+        {
+            access : true,
+            version : 2,
             name : `Tourism Website `,
             description : `Create Imagination Tourism website for competition`,
             status: `REST`,
