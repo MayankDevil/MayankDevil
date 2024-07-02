@@ -68,7 +68,7 @@ try
             collabrate : [`self`],
             techstack : ["HTML","CSS","JavaScript","BootStrap"],
             thanks : [`VSCodium`,`GitHub`,`GIMP`,`Bootstrap`],
-            url : `https://github.com/MayankDevil/Tourism_website`,
+            url : `https://mayankdevil.github.io/Tourism_website/`,
             download : ``,
             interface : `Web Application`,
             look : `tourismHome.png`
