@@ -7,9 +7,9 @@ _Each day, we have the power to impact the world, but the most profound change, 
 
 ## 🚀 About Me
 
--   A passionate Developer from **India**.
--   I like Developing Website & Programming.
--   I have learn by experience & practical implementation.
+-   I am a passionate Developer from **India**.
+-   I enjoy developing websites and programming.
+-   I have learned through experience and practical implementation.
 
 ## 🛠 Skills
 
