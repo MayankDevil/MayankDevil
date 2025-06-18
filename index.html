@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!--
--   website-14 ""
+-   website-14 "PROFILE"
 -   Designed | Developed by Mayank
 -   All Right Reserved Mayank ( https://github.com/MayankDevil/ )
 -   HTML : ./index.html
@@ -17,17 +17,18 @@
         | style |
         ---------
     -->
+    <link rel="stylesheet" href="assets/bootstrap-icons.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
-    <link rel="stylesheet" href="css/bootstrap-icons.min.css">
 
 </head>
 
 <body>
+    
     <!--
-        --------------------------------------------------------
+        ------------------
         | main container |
-        --------------------------------------------------------
+        ------------------
     -->
     <main id="main">
 
@@ -40,19 +41,19 @@
             
             <nav id="nav">
 
-                <button href="#" title="Home Page" class="link">
-                    <span class="bi bi-house"></span>
-                    <span class="item">Introduction</span>
+                <button href="#about" title="Home Page" class="link">
+                    <span class="bi bi-person"></span>
+                    <span class="item"> about </span>
                 </button>
 
-                <button href="#" title="Work Page" class="link">
+                <button href="#project" title="Work Page" class="link">
                     <span class="bi bi-folder"></span>
-                    <span class="item">Projects</span>
+                    <span class="item"> project </span>
                 </button>
 
-                <button href="#" title="Work Page" class="link">
-                    <span class="bi bi-link-45deg"></span>
-                    <span class="item">Contact</span>
+                <button href="#experience" title="experience Page" class="link">
+                    <span class="bi bi-clipboard-data"></span>
+                    <span class="item"> experience </span>
                 </button>
 
             </nav>
@@ -60,36 +61,41 @@
         </header>
 
         <!--
-            ====================
-            [ mother_container ] -------------------------------
-            ====================
+            ==================
+            [ root container ] -------------------------------
+            ==================
         -->
-        <div id="mother_container">
+        <div id="root">
 
             <!--
-                ------------------------
-                [ introduction section ]
-                ------------------------
+                -----------------
+                [ about section ]
+                -----------------
             -->
-            <section id="introduction">
+            <section id="about">
                 <div class="row">
                     
                     <!-- { first column } -->
-                    <div class="col">
+                    <div class="column">
                     
-                        <img src="data/programmer.png" alt="" class="selfi">
+                        <img src="public/who/developer.png" alt="" class="selfi">
                     
                     </div>
                     <!-- { last column } -->
-                    <div class="col">
+                    <div class="column">
                         
-                        <h1 class="display-4"> <span>I am </span> Mayank </h1>
+                        <h1 class=""> <span>I am </span> Mayank </h1>
 
-                        <strong> Web Developer & Programmer </strong>
+                        <h3> Web Developer & Programmer </h3>
+
+                        <a href="https://github.com/MayankDevil/" target="_blank" class="media bi bi-github"></a>
+                        <a href="https://www.linkedin.com/in/MasterMayank/" target="_blank" class="media bi bi-linkedin"></a>
+                        <a href="https://mastermayank.w3spaces.com" target="_blank" class="media bi bi-person-badge"></a>
                         
-                        <h5> My work in the world of coding reflects my skills and dedication.If you have a task that aligns with my abilities, please feel free to reach out. </h5>
+                        <p> My work in the world of coding reflects my skills and dedication.If you have a task that aligns with my abilities, please feel free to reach out. </p>
+
                         <!-- [ resume anchor ] -->
-                        <a href="https://github.com/MayankDevil/myData/blob/main/public/pdf/resume.pdf" title="Resume" class="btn" id="ccv_btn"> <span class="bi bi-file-pdf"></span> Download CCV </a>
+                        <a href="" title="Download Resume" class="btn" id="cv_btn"> <span class="bi bi-file-pdf"></span> &nbsp; Download CV </a>
 
                         <button class="bi bi-arrow-right-short" id="next_btn"></button>
 
@@ -103,102 +109,31 @@
                 -------------------
             -->
             <section id="project">
-                <div class="row">
-                    
-                    <!-- { first column } -->
-                    <div class="col">
-                    
-                        <h2> Project </h2>
-                        <!-- [ serach bar ] -->
-                        <div id="search">
+                
+                <!-- ( search ) -->
+                <div id="search">
 
-                            <span class="bi bi-search"></span>
+                    <span class="bi bi-search"></span>
 
-                            <input type="search" name="search" placeholder="Search Project ..." id="bar">
+                    <input type="search" name="search" placeholder="Search Project ..." id="bar">
 
-                        </div>
-                    
-                    </div>
-                    <!-- { last column } -->
-                    <div class="col" id="repositories">
-                        
-                        <!--
-                            - target by repositories id
-                            - fetch data by ./js/myData.js
-                            - dynmic folder structure modules
-                        -->
-
-                    </div>
-                    
                 </div>
+                
+                <!-- { repositories } -->
+                <div class="" id="repositories"></div>
+                    
             </section>
             <!--
-                -------------------
-                [ contact section ]
-                -------------------
+                ----------------------
+                [ experience section ]
+                ----------------------
             -->
-            <section id="contact">
-                <div class="row">
+            <section id="experience">
+
+                <div id="work"></div>
+                
+                <a href="mailto:mastermayank91@gmail.com" class="btn mail_btn"> <span class="bi bi-envelope"></span> Send E-mail </a>
                     
-                    <!-- { heading column } -->
-                    <div class="col">
-
-                        <h2> Contact </h2>
-
-                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque assumenda neque rerum aliquid totam eius quaerat nemo ratione, placeat, vitae praesentium aliquam amet ut odio repellat voluptatum rem, vero sed? </p>
-
-                    </div>
-                    <!-- { social column } -->
-                    <div class="col" id="social">
-
-                        <!-- [ github ] -->
-                        <div href="#" id="" class="media">
-
-                            <span class="bi bi-github"></span>
-
-                            <a href="https://github.com/MayankDevil/" target="_blank" class="linkbox">
-
-                                <h3> Github </h3>
-                                
-                                <div class="flink"> https://github.com/MayankDevil/ </div>
-                                
-                            </a>
-                                
-                        </div>
-                        <!-- [ linkedin ] -->
-                        <div href="#" id="" class="media">
-
-                            <span class="bi bi-linkedin"></span>
-
-                            <a href="https://www.linkedin.com/in/MasterMayank/" target="_blank" class="linkbox">
-
-                                <h3> Linkedin </h3>
-                                
-                                <div class="flink"> https://www.linkedin.com/in/MasterMayank/ </div>
-                            
-                            </a>
-
-                        </div>
-                        <!-- [ profile ] -->
-                        <div href="#" id="" class="media">
-
-                            <span class="bi bi-person-badge"></span>
-
-                            <a href="https://mastermayank.w3spaces.com" target="_blank" class="linkbox">
-
-                                <h3> Portfolio </h3>
-                                
-                                <div class="flink"> https://mastermayank.w3spaces.com/ </div>
-                            
-                            </a>
-
-                        </div>
-
-                    </div>
-
-                    <a href="mailto:mastermayank91@gmail.com" class="btn mail_btn"> Send E-mail </a>
-                    
-                </div>
             </section>
 
         </div>
@@ -207,11 +142,7 @@
             [ footer section ] ---------------------------------
             ==================
         -->
-        <footer id="footer">
-
-            Developed | Designed by <a href="https://mayankdevil.github.io/Portfolio/"> Mayank </a>
-
-        </footer>
+        <footer id="footer"> Developed | Designed by <a href="https://mayankdevil.github.io/Portfolio/"> Mayank </a> </footer>
 
     </main>
     <!--
@@ -219,8 +150,8 @@
         | script |
         ----------
     -->
-    <script src="js/myData.js"></script>
-    <script src="js/folderLayout.js"></script>
+    <script src="assets/jQuery.min.js"></script>
+    <script src="js/animation.js"></script>
     <script src="js/searchBar.js"></script>
     <script src="js/script.js"></script>
     
