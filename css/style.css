@@ -6,14 +6,12 @@
 -   CSS : css/style
 */
 
-
-
 *
 {
     user-select: none;
     margin: 0;
     padding: 0;
-    color:var(--dark);
+    color:var(--dark8);
     font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
     font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     text-decoration: none;
@@ -23,17 +21,29 @@
 }
 :root
 {
-    --white:#f8f9fa;
-    --black:#10151b;
-    --light:#e9ecef;
-    --gray:#7f8fa6;
-    --dark:#212529;
-    --primary: #fd9644;
-    --primary:#fd7e14;
-    --secondary: #ffbe76;
-    --blue:#3d8bfd;
-    --red:#dc3545;
-    --green:#28a745;
+    --orange0:#ffe5d0;
+    --orange1:#fecba1;
+    --orange2:#feb272;
+    --orange3:#fd9843;
+    --orange4:#fd7e14;
+    --orange5:#ca6510;
+    --orange6:#984c0c;
+    --orange7:#653208;
+    --orange8:#331904;
+    --dark0:#f8f9fa;
+    --dark1:#e9ecef;
+    --dark2:#dee2e6;
+    --dark3:#ced4da;
+    --dark4:#adb5bd;
+    --dark5:#6c757d;
+    --dark6:#495057;
+    --dark7:#343a40;
+    --dark8:#212529;
+    --red4:#dc3545;
+    --blue3:#3d8bfd;
+    --green4:#198754;
+    --yellow3:#ffda6a;
+    --yellow4:#ffcd39;
 }
 /*
     -------------------------
@@ -70,7 +80,7 @@ body
 {
     width: 100%;
     min-height: 100vh;
-    background: var(--light);
+    background: var(--dark1);
     /* background: radial-gradient(var(--dred),var(--dark)); */
 }
 /*
@@ -78,74 +88,102 @@ body
 */
 #main
 {
-    display: grid;
+    max-width: 1000px;
+    margin: 1rem auto;
 }
 section
 {
     max-width:1000px;
 }
+
 h1
 {
-    padding: 1rem;
+    padding: 1rem 0;
     font-weight: normal;
-    font-size: 2rem;
-    color: var(--primary);
-    /* text-shadow: 1px 1px 2px var(--gray); */
+    color:var(--orange3);
 }
 h2
 {
-    padding: 1rem;
-    font-size: 2rem;
+    padding: 1rem 0;
+    color:var(--dark7);
 }
 h3
 {
-    font-size: 1.5rem;
-    font-weight: lighter;
+    padding: 1rem 0;
+    color: var(--dark4);
 }
 h4
 {
-    padding: 1rem;
+    font-weight: normal;
+    color :var(--dark8);
 }
 h5
 {
-    padding: 1rem;
-    line-height: 2rem;
-    font-weight: normal;
-    font-size: 1.1rem;
-    color: var(--gray);
+    padding: 1rem 0;
+    color:var(--dark6);
 }
+
 p
 {
-    padding: 1rem;
-    line-height: 2rem;
-    font-size: 1rem;
-    color:var(--gray);
+    color: var(--6);
 }
-strong
+
+#experience_container
 {
-    display: inline-block;
-    padding: 1rem;
-    color: var(--dark);
+    padding: 1rem 0;
+    border-left: 2px dotted var(--gray);
     opacity: 0.7;
 }
+
 .bi
 {
     font-size: 1em;
-    color:var(--primary);
+    color:var(--orange3);
 }
 .btn
 {
     display: inline-block;
-    padding:  1rem 2rem;
+    padding:  10px 2rem;
     font-size: 1rem;
-    color: var(--light);
-    background: var(--black);
-    border-radius: 10px;
-    box-shadow: 0 0 15px var(--gray);
+    color: var(--orange0);
+    background: var(--dark8);
+    border-radius: 5px;
+    box-shadow: 0 0 10px var(--gray);
 }
 .btn:hover
 {
-    opacity: 0.5;
+    background: var(--dark7);
+}
+/*
+    ROOT CONTAINER CSS -----------------------
+*/
+#root
+{
+    display: block;
+    background: var(--dark0);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+}
+/*
+    FOOTER CSS ---------------------------------
+*/
+#footer
+{
+    display: block;
+    padding: 2rem 1rem;
+    max-width: 1000px;
+    margin:auto;
+    text-align: end;
+    color:var(--dark7);
+}
+#footer a
+{
+    font-weight: bold;
+    color:var(--dark8);
+}
+#footer a:hover
+{
+    font-weight: lighter;
 }
 /*
     HEADER CSS --------------------------
@@ -154,103 +192,95 @@ strong
 {
     display: block;
     max-height: 100vh;
-    padding: 1rem;
-    /* border:1px solid green; */
+    margin:10px auto;
+    /* padding: 1rem; */
+    /* background: red; */
 }
-#nav
+#nav    
 {
     display: grid;
     grid-template-columns: repeat(3,auto);
-    justify-content: center;
+    justify-content: start;
+    background: var(--dark0);
+    clip-path: polygon(0 0, 50% 0%, 52% 100%, 0% 100%);
+    clip-path: polygon(50% 0, 52% 50%, 50% 100%, 0 100%, 0 0);
+    border-radius: 5px 0 0 5px;
 }
 #nav .link
 {
-    display: inline-block;
-    margin: 1rem;
-    padding: 1rem;
-    background: rgba(16, 21, 27, 0.9);
+    display: flex;
+    align-items: center;
+    margin: 5px;
+    padding: 5px 10px;
+    background: var(--orange0);
     border-radius: 5px;
 }
 #nav .link .bi
 {
     font-size: 1.5em;
-    color:var(--primary);
+    color:var(--orange4);
 }
 #nav .item
 {
     display: none;
-    font-size: 1rem;
-    font-weight: bold;
-    color: var(--light);
-}
-#nav .link:hover
-{
-    box-shadow: 0 0  10px var(--gray);
-}
-#nav .link:hover .item
-{
-    transition: all 1s linear;
-    display: inline-block;
-}
-.active
-{
-    display: inline-block;
-}
-/*
-    MOTHER CONTAINER CSS -----------------------
-*/
-#mother_container
-{
-    display: block;
-    max-width: 1000px;
-    margin: 5vh auto;
-    background: rgba(255, 255, 255, 0.6);
-    backdrop-filter: blur(10px);
-    border-radius: 10px;
-    box-shadow: 0 0 10px var(--gray);
+    padding-left:10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 1em;
+    font-weight: normal;
+    color: var(--dark8);
 }
 /*
     INTRODUCTION CSS ---------------------------
 */
-#introduction
+/* #introduction
 {
-    display: none;
-}
-#introduction .row
+} */
+#about .row
 {
-    position: relative;
+    /* position: relative; */
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 100%;
 }
-#introduction .row .col:first-child
+#about .row .column:first-child
 {
     padding: 2rem;
 }
-#introduction .row .col:last-child
+#about .row .column:last-child
 {
+    padding: 1rem;
     place-self: center;
 }
-#introduction h5
+#about p
+{
+    padding: 2rem 0;
+}
+
+.media
+{
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 1em;
+    border:1px solid var(--orange2);
+    border-radius: 1rem;
+}
+#about #cv_btn
 {
     margin: 1rem auto;
 }
-#introduction #ccv_btn
-{
-    margin: 1rem;
-}
-#introduction #next_btn
+#about #next_btn
 {
     position: absolute;
     right:0;
     display: inline-block;
     padding: 1rem 5px;
     font-size: 2em;
-    color: var(--dark);
-    background: var(--secondary);
+    color: var(--orange0);
+    background: var(--orange3);
     border-radius: 1rem 0  0 1rem;
 }
-#introduction #next_btn:hover
+#about #next_btn:hover
 {
     transition: all 0.2s linear;
     padding: 1rem 10px;
@@ -260,217 +290,151 @@ strong
 */
 #project
 {
-    display: none;
+    width: 100%;
+    padding: 10px;
 }
-#project .row
-{
-    display: grid;
-    grid-template-columns: 1fr;
-}
-#project .row .col:first-child
-{
-    padding: 1rem;
-}
-#project #search
+#search
 {
     display: flex;
-    width: 80%;
-    margin: 1rem auto;
-    border:1px solid var(--primary);
+    width: 100%;
     background: transparent;
+    border:2px solid var(--dark3);
     border-radius: 10px;
 }
-#project #search .bi
+#search .bi
 {
-    border: 1px;
-    padding: 1rem;
+    padding: 10px;
 }
-#project #search #bar
+#search #bar
 {
     width: 100%;
-    margin: auto;
-    padding: 1rem;
+    padding: 5px;
     font-size: 1rem;
-    background:transparent;
+    color:var(--dark6);
+    background: transparent;
 }
-#project #search:hover
+#search:hover
 {
-    background: var(--light);
-    border:none;
+    border-color:var(--orange1);
 }
-#project .row .col:last-child
-{
-    padding: 1rem;
-}
-#project .folder
+
+/* project section */
+#repositories
 {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 1rem;
+    grid-template-columns: 1fr 1fr 1fr ;
 }
-#project .folder .look
+.folder
 {
-    position: relative;
-    display: block;
-    margin-right: 1rem;
-    padding-right: 2rem;
-    border-right: 1px solid var(--gray);
+    margin: 10px;
+    border: 1px solid var(--dark4);
+    border-radius: 10px;
+    box-shadow: 0 0 10px var(--dark3);
 }
-#project .folder:hover .look
+.folder .look .image
 {
-    transition: all 1s ease-in;
-    border-right: 1px inset var(--primary);
-}
-#project .folder .look::after
-{
-    position: absolute;
-    content: '';
-    right: -0.8rem;
-    padding: 10px;
-    background: var(--white);
-    border: 1px solid var(--primary);
-    border-radius: 50%;
-}
-#project .folder:hover .look::after
-{
-    border-color:var(--blue) ;
-}
-#project .folder .look .image
-{
+    object-fit: contain;
     width: 100%;
-    height: auto;
-    filter: blur(2px);
-    padding: 1rem;
+    background: var(--dark8);
+    border-radius: 10px;
+    /* filter:grayscale(5) blur(2px); */
 }
-#project .folder:hover .look .image
+.folder:hover
 {
-    filter: blur(0px);
+    box-shadow: 0 0 10px var(--dark6);
 }
-#project .folder .detail
+.folder:hover .look .image
 {
-    padding: 1rem;
+    /* filter:grayscale(0) blur(0); */
 }
-#project .folder .detail > div
-{
-    padding: 0.5rem 1rem;
-}
-.url
-{
-    display: inline-block;
-    padding: 5px;
-    font: 1rem;
-    color:var(--blue);
-    border-radius: 5px;
-}
-.url:hover
-{
-    font-weight: bold;
-}
-/*
-    CONTACT CSS --------------------------------
-*/
-#contact
+details
 {
     display: none;
-}
-#contact #social
-{
-    display: grid;
-    grid-template-columns: repeat(3,30%);
-    width: 90%;
-    margin: 6% auto 5% auto;
-}
-#contact #social .media
-{
-    text-align: center;
-    border-top:2px dotted var(--gray);
-}
-#contact #social .media .bi
-{
-    display: inline-block;
-    margin-top: -3rem;
     padding: 10px;
-    font-size: 2em;
-    color: var(--blue);
-    background: var(--white);
-    box-shadow: 0 0 5px var(--blue);
-    border-radius: 50%;
 }
-/* #contact #social .media .bi-github
+details summary 
 {
-    color: var(--black);
+    list-style: none;
 }
-#contact #social .media .bi-linkedin
+.folder #list li
 {
-    color: var(--blue);
+    list-style-type: circle;
+    line-height: 2rem;
+    color:var(--dark4);
 }
-#contact #social .media .bi-person-badge
+
+/*
+    EXPERIENCE CSS --------------------------------
+*/
+#experience #work
 {
-    color: var(--red);
-} */
-#contact #social .media .linkbox
+    padding: 0 2rem;
+}
+.work
 {
     position: relative;
-    display: block;
-    margin: 3rem 1rem 1rem 1rem;
-    padding: 0.5rem;
-    text-align: left;
-    background: var(--black);
+    padding: 1rem 1rem;
+    border-left: 2px dotted var(--dark5);
+}
+.work:before
+{
+    content: '';
+    position: absolute;
+    left: -10px;
+    height: 5px;
+    width: 5px;
+    margin: 5px 0;
+    padding:5px;
+    background: var(--dark0);
+    border: 1px solid var(--orange4);
     border-radius: 10px;
 }
-#contact #social .media .linkbox::before
+.work .pipe
 {
-    position: absolute;
-    top:-1rem;
-    left:45%;
-    content: '';
-    display: inline-block;
-    padding: 1rem;
-    background: var(--black);
-    transform: rotate(45deg);
+    padding: 0 5px;
+    color: var(--orange1);
 }
-#contact #social .media .linkbox:hover
+.work .time
 {
-    opacity:0.9;
+    font-size: bold;
+    color:var(--dark5);
 }
-#contact #social .media .linkbox h3
+.work .office_link
 {
-    color:var(--light);
-    padding: 1rem;
+    font-size: small;
+    color:var(--orange5);
 }
-#contact #social .media .linkbox .flink
+.work .office_link:hover
 {
-    color:var(--secondary);
-    padding: 1rem;
-    word-wrap: break-word;
-    line-height: 1.5rem;
     letter-spacing: 1px;
-    font-weight: normal;
 }
-#contact .mail_btn
+.work .letter_btn
+{
+    margin: 10px 0;
+    font-size: small;
+    padding: 5px 10px;
+    color:var(--dark3);
+    background: var(--orange8);
+}
+
+.mail_btn
 {
     margin: 1rem;
-    font-weight: bold;
-    color: var(--dark);
-    background: var(--secondary);
+    padding: 10px;
+    color: var(--orange0);
+    background: var(--orange3);
 }
-/*
-    FOOTER CSS ---------------------------------
-*/
-#footer
+.mail_btn:hover,
+.mail_btn:hover .bi
 {
-    display: block;
-    padding: 3rem 1rem;
-    max-width: 1000px;
-    margin:auto;
+    background: var(--orange2);
 }
-#footer a
+.mail_btn .bi
 {
-    font-weight: bold;
-}
-#footer a:hover
-{
-    font-weight: lighter;
+    padding: 5px;
+    font-size:1em;
+    color: var(--orange0);
+    background: var(--orange3);
 }
 /*
     The End ====================================
