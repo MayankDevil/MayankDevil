@@ -188,7 +188,7 @@ $(document).ready(function () {
                     $("#repositories").append(`<div class="folder">
                         
                         <a href="./data/design/${(element.url != null )? element.url : '#'}" target="_blank" class="look">
-                            <img src="public/design/${element.look}" alt="" class="image">
+                            <img src="https://mayankdevil.github.io/myData/public/design/${element.look}" alt="" class="image">
                         </a>
 
                         <details>
