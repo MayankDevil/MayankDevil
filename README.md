@@ -16,7 +16,7 @@ Typing Speed [ __45wpm__ ] minimum
 
 Fontend Developement { __HTML__ | __CSS__ | __JavaScript__ } OR learning __React__ | __NodeJS__ 
 
-Good to Handling __Bootstrap__ Framework
+Good to Handling __Bootstrap__ Framework && _AJAX_ with __JQuery__
 
 Basic Knowlegde of { __PHP__ } AND __mySQL__ Database Query
 
