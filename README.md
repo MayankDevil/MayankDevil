@@ -4,7 +4,6 @@
 
 _Each day, we have the power to impact the world, but the most profound change, the kind that truly resonates, often requires patience and time._
 
-
 ## 🚀 About Me
 
 -   I am a passionate Developer from **India**.
@@ -15,26 +14,16 @@ _Each day, we have the power to impact the world, but the most profound change, 
 
 Typing Speed [ __45wpm__ ] minimum 
 
-Fontend Developement { __HTML__ | __CSS__ | __JavaScript__ }
+Fontend Developement { __HTML__ | __CSS__ | __JavaScript__ } OR learning __React__ | __NodeJS__ 
 
-Handling __Bootstrap__ Layout
+Good to Handling __Bootstrap__ Framework
 
-Backend Developement { __PHP__ }
-
-__Java__ Core Programming
-
-__mySQL__ Database Query
-
-how to use __Git__, I know
-
-Basic Knowlegde of __GIMP__
-
-Work experience with __Linux__ & __Windows__ OS
+Basic Knowlegde of { __PHP__ } AND __mySQL__ Database Query
 
 ## 🔗 Links
 
-[![github](https://img.shields.io/badge/github-black?style=for-the-badge&logo=github&logoColor=white)](https://github.io/MayankDevil/)
-[![portfolio](https://img.shields.io/badge/my_portfolio-crimson?style=for-the-badge&logo=ko-fi&logoColor=white)](https://mayankdevil.github.io/MayankDevil/)
+<!-- [![github](https://img.shields.io/badge/github-black?style=for-the-badge&logo=github&logoColor=white)](https://github.com/MayankDevil/) -->
+[![PROFILE](https://img.shields.io/badge/my_portfolio-crimson?style=for-the-badge&logo=ko-fi&logoColor=white)](https://mayankdevil.github.io/MayankDevil/)
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/MasterMayank/)
 
 <!-- author is mayank -->
