@@ -1,0 +1,5 @@
+# .gitignore
+public/
+admin.json
+data.json
+index.js
