@@ -1,0 +1,248 @@
+/*
+- Profile "version-(2.0.0)"
+- File : ./css/responsive.css
+*/
+
+/*
+    SCREEN 1200PX CSS -------------------
+*/
+@media screen and (max-width: 1200px)
+{
+    /* main */
+    section
+    {
+        max-width:900px;
+    }
+    /* about */
+    #about .row .column:first-child
+    {
+        padding: 1rem;
+    }
+}
+/*
+    SCREEN 992PX CSS -------------------
+*/
+@media (max-width: 992px)
+{
+    body
+    {
+        background: var(--dark0);
+    }
+    /* main */
+    #main
+    {
+        background:var(--dark0);
+    }
+    /* root container */
+    
+    #root
+    {
+        display: block;
+        margin: 5vh 1rem;
+        box-shadow: none;
+    }
+    /* header */
+
+    #header
+    {
+        position: fixed;
+        z-index: 10;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        margin: 0;
+    }
+    #nav    
+    {
+        display: grid;
+        grid-template-columns: repeat(3,auto);
+        justify-content: center;
+        background: var(--dark0);
+        clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+        border-radius: 10px 10px 0 0;
+        box-shadow: 0 0 10px var(--dark5);
+    }
+    #header #nav .link
+    {
+        padding: 10px;
+    }
+    /* about */
+
+    #about .row
+    {
+        grid-template-columns: 1fr 1fr;
+    }
+    #about .row .column:first-child .selfi
+    {
+        height: auto;
+        width: 100%;
+        object-fit: contain;
+    }
+    #about .row .column:last-child
+    {
+        padding: 3rem 0 ;
+    }
+    /* experience */
+    #experience #social
+    {
+        grid-template-columns: 1fr;
+        margin: 3rem 1rem 3rem 3rem;
+        border-left:1px dotted var(--dark);
+    }
+    #experience #social .media
+    {
+        text-align: left;
+        border:none;
+    }
+    #experience #social .media .bi
+    {
+        margin-top: 0;
+        margin-left: -1.3rem;
+        font-size: 1.5em;
+    }
+    #experience #social .media .linkbox
+    {
+        display: block;
+        margin: 3rem 1rem 1rem 3rem;
+    }
+    #experience #social .media .linkbox::before
+    {
+        top:40%;
+        left:-1rem;
+    }
+}
+/*
+    SCREEN 768PX CSS -------------------
+*/
+@media (max-width: 768px)
+{
+    #main
+    {
+        padding: 0 0 3rem 0 ;
+    }
+    #root
+    {
+        margin:0;
+        padding: 0;
+    }
+    section
+    {
+        display: block;
+        opacity: 1;
+    }
+
+    /* footer */
+    
+    #footer
+    {
+        grid-row:0/1;
+        display: block;
+        padding: 2rem 1rem;
+        max-width: 1000px;
+        margin:auto;
+        text-align: center;
+        color:var(--dark7);
+    }
+
+    /* about */
+
+    #about .row
+    {
+        grid-template-columns: 1fr;
+    }
+    #about .row .column:first-child
+    {
+        place-self: center;
+    }
+    #about .row .column:last-child
+    {
+        padding: 2rem 10%;
+    }
+    #about #next_btn
+    {
+        display: none;
+        right:10px;
+        bottom:5px;
+        padding: 5px 10px;
+        background: transparent;
+        border: 1px solid var(--orange4);
+        border-radius: 50%;
+        transform: rotate(270DEG);
+    }
+    #about #next_btn:hover
+    {
+        transition:none;
+        padding: 5px 10px;
+        border-color: var(--dark8);
+    }
+    #about .bi-arrow-right-short
+    {
+        color: var(--orange4) !important;
+    }
+
+    /* project */
+
+    #repositories
+    {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    /* experience */
+    #experience #social
+    {
+        margin: 3rem 0 3rem 3rem;
+    }
+}
+/*
+    SCREEN 576PX CSS -------------------
+*/
+@media (max-width: 576px)
+{
+    /* main */
+    #main
+    {
+        background: var(--white);
+    }
+    /* mother container */
+    #mother_container
+    {
+        display: block;
+        width: 100%;
+        background: transparent;
+        margin: 5vh auto;
+        box-shadow: none;
+    }
+    /* about */
+    #about :is(.column:last-child, .column:last-child .social)
+    {
+        text-align: center;
+    }
+    
+    /* project */
+    #search
+    {
+        width: 100% !important;
+    }
+    #repositories
+    {
+        grid-template-columns: 1fr;
+    }
+    /* experience */
+    #experience #work
+    {
+        margin:0;
+    }
+}
+/*
+    SCREEN 370PX CSS -------------------
+*/
+@media (max-width: 370px)
+{
+    /* intruduction */
+    #about .row .col:last-child
+    {
+        padding: 2rem 5%;
+    }
+}
+
+/* developer Mayank | ( https://github.com/MayankDevil/ ) */

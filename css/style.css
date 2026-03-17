@@ -1,0 +1,482 @@
+/*
+- Profile "version-(2.0.0)"
+- File : ./css/style.css
+*/
+
+*
+{
+    user-select: none;
+    margin: 0;
+    padding: 0;
+    color:var(--dark8);
+    font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    text-decoration: none;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+}
+:root
+{
+    --orange0:#ffe5d0;
+    --orange1:#fecba1;
+    --orange2:#feb272;
+    --orange3:#fd9843;
+    --orange4:#fd7e14;
+    --orange5:#ca6510;
+    --orange6:#984c0c;
+    --orange7:#653208;
+    --orange8:#331904;
+    
+    --dark0:#f8f9fa;
+    --dark1:#e9ecef;
+    --dark2:#dee2e6;
+    --dark3:#ced4da;
+    --dark4:#adb5bd;
+    --dark5:#6c757d;
+    --dark6:#495057;
+    --dark7:#343a40;
+    --dark8:#212529;
+    --red4:#dc3545;
+    --blue3:#3d8bfd;
+    --green4:#198754;
+    --yellow3:#ffda6a;
+    --yellow4:#ffcd39;
+}
+/*
+    -------------------------
+    | IMPORT RESPONSIVE CSS |
+    -------------------------
+*/
+/* @import "responsive.css"; */
+/*
+----------------------
+| Bootstrap-Icon CSS |
+----------------------
+*/
+/* @import url(bootstrap-icons.min.css); */
+
+::-webkit-scrollbar
+{
+    width: 10px;
+    background:transparent;
+}
+::-webkit-scrollbar-thumb
+{
+    background: var(--dred);
+    border-radius: 1rem;
+}
+::marker
+{
+    color:var(--dred);
+}
+::placeholder
+{
+    color:var(--dark);
+}
+body
+{
+    width: 100%;
+    min-height: 100vh;
+    background: var(--dark1);
+    /* background: radial-gradient(var(--dred),var(--dark)); */
+}
+/*
+    MAIN CSS ----------------------------
+*/
+#main
+{
+    max-width: 1000px;
+    margin: 1rem auto;
+}
+section
+{
+    max-width:1000px;
+}
+
+h1
+{
+    padding: 1rem 0;
+    font-size: xx-large;
+    font-weight: normal;
+    color:var(--orange4);
+}
+h2
+{
+    padding: 1rem 0;
+    color:var(--dark7);
+}
+h3
+{
+    padding: 1rem 0;
+    font-size: larger;
+    color: var(--dark5);
+}
+h4
+{
+    font-weight: normal;
+    color :var(--dark8);
+}
+h5
+{
+    padding: 1rem 0;
+    color:var(--dark6);
+}
+
+p
+{
+    font-size: medium;
+    color: var(--dark6);
+}
+
+#experience_container
+{
+    padding: 1rem 0;
+    border-left: 2px dotted var(--gray);
+    opacity: 0.7;
+}
+
+.bi
+{
+    font-size: 1em;
+    color:var(--dark8);
+}
+.btn
+{
+    display: inline-block;
+    padding:  10px 2rem;
+    font-size: 1rem;
+    color: var(--orange2);
+    background: var(--dark8);
+    border-radius: 5px;
+}
+.btn:hover
+{
+    transition: all linear 0.3s;
+    transform: translateY(-5px);
+    box-shadow: 0 0 10px var(--dark8);
+}
+/*
+    ROOT CONTAINER CSS -----------------------
+*/
+#root
+{
+    display: block;
+    background: var(--dark0);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+}
+/*
+    FOOTER CSS ---------------------------------
+*/
+#footer
+{
+    display: block;
+    padding: 2rem 1rem;
+    max-width: 1000px;
+    margin:auto;
+    text-align: end;
+    color:var(--dark7);
+}
+#footer a
+{
+    font-weight: bold;
+    color:var(--dark8);
+}
+#footer a:hover
+{
+    font-weight: lighter;
+}
+/*
+    HEADER CSS --------------------------
+*/
+#header
+{
+    display: block;
+    max-height: 100vh;
+    margin:10px auto;
+    /* padding: 1rem; */
+    /* background: red; */
+}
+#nav    
+{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    justify-content: start;
+    background: var(--dark0);
+    clip-path: polygon(0 0, 50% 0%, 52% 100%, 0% 100%);
+    clip-path: polygon(50% 0, 52% 50%, 50% 100%, 0 100%, 0 0);
+    border-radius: 5px 0 0 5px;
+}
+#nav .link
+{
+    display: flex;
+    align-items: center;
+    margin: 5px;
+    padding: 5px 10px;
+    background: var(--orange0);
+    border-radius: 5px;
+}
+#nav .link .bi
+{
+    font-size: 1.5em;
+    color:var(--orange4);
+}
+#nav .item
+{
+    display: none;
+    padding-left:10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 1em;
+    font-weight: normal;
+    color: var(--dark8);
+}
+/*
+    INTRODUCTION CSS ---------------------------
+*/
+/* #introduction
+{
+} */
+#about .row
+{
+    /* position: relative; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+}
+#about .row .column:first-child
+{
+    padding: 2rem;
+}
+#about .row .column:last-child
+{
+    padding: 1rem;
+    place-self: center;
+}
+#about p
+{
+    padding: 1rem 0 2rem 0;
+}
+.social
+{
+    text-align: right;
+}
+.media
+{
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 1em;
+    color: var(--dark8);
+    border:2px solid var(--dark8);
+    border-radius: 5px;
+}
+.media:hover
+{
+    border-color: var(--orange4);
+}
+#about #cv_btn
+{
+    margin: 1rem auto;
+}
+#about #cv_btn .bi
+{
+    color: var(--red4);
+}
+#about #next_btn
+{
+    position: absolute;
+    right:0;
+    display: inline-block;
+    padding: 1rem 5px;
+    font-size: 2em;
+    color: var(--orange0);
+    background: var(--orange4);
+    border-radius: 1rem 0  0 1rem;
+}
+#about #next_btn:hover
+{
+    transition: all 0.2s linear;
+    padding: 1rem 10px;
+}
+/*
+    PROJECT CSS --------------------------------
+*/
+#project
+{
+    width: 100%;
+    padding: 10px;
+    /* border: 1px solid red; */
+}
+#search
+{
+    display: flex;
+    width: 100%;
+    background: transparent;
+    border:2px solid var(--dark3);
+    border-radius: 10px;
+}
+#search .bi
+{
+    padding: 10px;
+}
+#search #bar
+{
+    width: 100%;
+    padding: 5px;
+    font-size: 1rem;
+    color:var(--dark6);
+    background: transparent;
+}
+#search:hover
+{
+    border-color:var(--orange1);
+}
+
+/* project section */
+#repositories
+{
+    display: grid;
+    margin: 1rem;
+    gap: 2rem;
+    /* flex-flow:row wrap; */
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.repos
+{
+    display: block;
+    position: relative;
+    aspect-ratio: 2/1;
+    background: var(--orange2);
+    border-radius: 10px 0 10px 0 ;
+    clip-path: polygon( 100%10%, 50%10%, 45%0%, 0%0%, 0%100%, 100%100%);
+}
+/* .repos:hover
+{
+    transform: scale(0.9);
+} */
+
+.repos div
+{
+    padding: 1rem;
+}
+.repos h4
+{
+    margin-top: 1rem;
+    font-size: large;
+    font-weight: bold;
+}
+.repos .bi-github
+{
+    position: absolute;
+    bottom: 3%;
+    right: 3%;
+    opacity: 0.1;
+    font-size: 3rem;
+}
+.repos:hover .bi-github
+{
+    opacity: 0.5;
+}
+.repos .clone_btn
+{
+    display: inline-block;
+    position: absolute;
+    right: 1rem;
+    top: 2rem;
+    padding: 0 5px;
+    font-size: larger;
+    box-shadow: none;
+    color: var(--dark7);
+    background: transparent;
+    border: 2px solid var(--dark7);
+}
+.repos .clone_btn:hover
+{
+    transform: none;
+}
+.repos .clone_btn:hover .bi
+{
+    color: var(--red4);
+    font-size: 1.1em;
+}
+
+/*
+    EXPERIENCE CSS --------------------------------
+*/
+#experience #work
+{
+    padding: 0 2rem;
+}
+.work
+{
+    position: relative;
+    padding: 1rem 1rem;
+    border-left: 2px dotted var(--dark5);
+}
+.work:before
+{
+    content: '';
+    position: absolute;
+    left: -10px;
+    height: 5px;
+    width: 5px;
+    margin: 5px 0;
+    padding:5px;
+    background: var(--dark0);
+    border: 1px solid var(--orange4);
+    border-radius: 10px;
+}
+.work .pipe
+{
+    padding: 0 5px;
+    color: var(--orange1);
+}
+.work .time
+{
+    font-size: bold;
+    color:var(--dark5);
+}
+.work .office_link
+{
+    font-size: small;
+    color:var(--orange5);
+}
+.work .office_link:hover
+{
+    letter-spacing: 1px;
+}
+.work .letter_btn
+{
+    margin: 10px 0;
+    font-size: small;
+    padding: 5px 10px;
+    color:var(--dark0);
+    background: var(--orange3);
+}
+.work .letter_btn .bi
+{
+    color: var(--orange0);
+}
+
+.mail_btn
+{
+    margin: 1rem;
+    padding: 10px;
+    color: var(--orange2);
+    background: var(--dark8);
+}
+.mail_btn:hover,
+.mail_btn:hover .bi
+{
+    transform: translateX(10px);
+}
+.mail_btn .bi
+{
+    padding: 5px;
+    font-size:1em;
+    color: var(--orange3);
+    background: transparent;
+}
+
+/* developer Mayank | ( https://github.com/MayankDevil/ ) */
