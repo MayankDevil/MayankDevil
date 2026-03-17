@@ -114,61 +114,62 @@ $(document).ready(function () {
 
     let location = "https://mayankdevil.github.io/myData/public/api/admin.json";
 
-    let account = null
-    
-    // localStorage.setItem('activeAccount',JSON.stringify(hijack)) // hack    
+    let account = null;
 
     if (localStorage.getItem('activeAccount')) 
     {
         account = JSON.parse(localStorage.getItem('activeAccount'))
 
         experienceSection(account.experience)
-
         repositoriesSection(account.data)
 
         $("#cv_btn").attr("href", account.resume)
     }
-    else
+    else 
     {
         $.ajax({
-            url : location,
-            type : 'GET',
-            beforeSend : function () {
+            url: location,
+            type: 'GET',
 
-                $("#experience #work").append(`<div class="loader"> loading data ... </div>`)
+            beforeSend: function () {
+                $("#experience #work")
+                    .append(`<div class="loader"> loading data ... </div>`)
             },
-            success : function (response) {
 
-                const ADMIN = response.admin.find(admin => admin.username === 'Mayank')
+            success: function (response) {
 
-                $.getJSON(ADMIN.data, function (response) {
-    
+                const admin = response.admin.find(a => a.username === 'Mayank')
+
+                $.getJSON(admin.data, function (repoData) {
+
                     account = {
-                        resume : ADMIN.resume,
-                        experience : ADMIN.experience,
-                        data : response
+                        resume: admin.resume,
+                        experience: admin.experience,
+                        data: repoData
                     }
 
-                    localStorage.setItem('activeAccount',JSON.stringify(account))
+                    localStorage.setItem('activeAccount', JSON.stringify(account))
 
                     experienceSection(account.experience)
-
                     repositoriesSection(account.data)
-
                     $("#cv_btn").attr("href", account.resume)
 
-                }).fail((error) => console.error(error)).done(() => console.log('~ data loaded'))
-            },
-            error : (error) => {
+                }).fail(error => 
+                    console.error(error)).done(() => 
+                        console.log('~ data loaded'))
 
-                if (!navigator.onLine) 
-                {
-                    console.log(`( network offline )_`)
+            },
+
+            error: (error) => {
+
+                if (!navigator.onLine) {
+                    console.log("( network offline )")
                 }
+
                 console.log(`[ data loading error ] : ${error}`)
             },
-            complete : function () {
 
+            complete: function () {
                 $("#experience #work .loader").hide()
             }
         })
