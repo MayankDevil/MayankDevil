@@ -139,21 +139,25 @@ $(document).ready(function () {
             },
             success : function (response) {
 
-                account = response.admin.find(admin => admin.username === 'Mayank')
-                
-                localStorage.setItem('activeAccount',JSON.stringify({
-                    resume : account.resume,
-                    experience : account.experience,
-                    data : account.data
-                }))
+                const ADMIN = response.admin.find(admin => admin.username === 'Mayank')
 
-                account = JSON.parse(localStorage.getItem('activeAccount'))
+                $.getJSON(ADMIN.data, function (response) {
+    
+                    account = {
+                        resume : ADMIN.resume,
+                        experience : ADMIN.experience,
+                        data : response
+                    }
 
-                experienceSection(account.experience)
+                    localStorage.setItem('activeAccount',JSON.stringify(account))
 
-                repositoriesSection(account.data)
+                    experienceSection(account.experience)
 
-                $("#cv_btn").attr("href", account.resume)
+                    repositoriesSection(account.data)
+
+                    $("#cv_btn").attr("href", account.resume)
+
+                }).fail((error) => console.error(error)).done(() => console.log('~ data loaded'))
             },
             error : (error) => {
 
