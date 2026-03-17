@@ -23,7 +23,6 @@ Basic Knowlegde of { __PHP__ } AND  __mySQL__  query
 
 ```
 https://github.com/MayankDevil/
-
 ```
 <!-- [![github](https://img.shields.io/badge/github-black?style=for-the-badge&logo=github&logoColor=white)](https://github.com/MayankDevil/) -->
 [![PROFILE](https://img.shields.io/badge/Portfolio-crimson?style=for-the-badge&logo=ko-fi&logoColor=white)](https://mayankdevil.github.io/MayankDevil/)
