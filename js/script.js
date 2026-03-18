@@ -30,7 +30,7 @@ $(document).ready(function () {
             nav_item.eq(index).show("slow")
         }
     }
-    navLinkActive(1);  // default nav_link active
+    navLinkActive(0);  // default nav_link active
                     
     /*
         -----------------------------------------------------------------

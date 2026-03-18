@@ -132,8 +132,8 @@ $(document).ready(function () {
             type: 'GET',
 
             beforeSend: function () {
-                $("#experience #work")
-                    .append(`<div class="loader"> loading data ... </div>`)
+
+                $("#experience #work").append(`<div class="loader"> loading data ... </div>`)
             },
 
             success: function (response) {
@@ -154,9 +154,7 @@ $(document).ready(function () {
                     repositoriesSection(account.data)
                     $("#cv_btn").attr("href", account.resume)
 
-                }).fail(error => 
-                    console.error(error)).done(() => 
-                        console.log('~ data loaded'))
+                }).fail(error => console.error(error)).done(() => console.log('~ data loaded'))
 
             },
 
@@ -165,8 +163,7 @@ $(document).ready(function () {
                 if (!navigator.onLine) {
                     console.log("( network offline )")
                 }
-
-                console.log(`[ data loading error ] : ${error}`)
+                console.log(error)
             },
 
             complete: function () {
