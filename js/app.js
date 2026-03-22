@@ -7,17 +7,9 @@ $(document).ready(function () {
 
     /* unactive account request */
 
-    function unActiveAccount (request) {
+    function unActiveAccount () {
 
-        if (request == 'PLEASE')
-        {
-            localStorage.removeItem('activeAccount')
-            location.reload()
-        } 
-        else 
-        {
-            console.log('(unActive request denied)_')   
-        }
+        localStorage.removeItem('activeAccount')
     }
     
     /*
@@ -113,65 +105,58 @@ $(document).ready(function () {
     */
 
     let location = "https://mayankdevil.github.io/myData/public/api/admin.json";
-
-    let account = null;
-
+    
+    let account = null
+    
     if (localStorage.getItem('activeAccount')) 
     {
         account = JSON.parse(localStorage.getItem('activeAccount'))
 
         experienceSection(account.experience)
         repositoriesSection(account.data)
-
+        
         $("#cv_btn").attr("href", account.resume)
     }
     else 
     {
-        $.ajax({
-            url: location,
-            type: 'GET',
+        $.getJSON(location).done(function (response) {
+            
+            account = response.admin.find(a => a.username === 'Mayank')
 
-            beforeSend: function () {
+            console.log(account.data)
 
-                $("#experience #work").append(`<div class="loader"> loading data ... </div>`)
-            },
+            $.ajax({
+                url : account.data,
+                type : 'GET',
+                success : function (reposData) {
 
-            success: function (response) {
-
-                const admin = response.admin.find(a => a.username === 'Mayank')
-
-                $.getJSON(admin.data, function (repoData) {
+                    console.log(reposData)
 
                     account = {
-                        resume: admin.resume,
-                        experience: admin.experience,
-                        data: repoData
+                        resume: account.resume,
+                        experience: account.experience,
+                        data: reposData,
                     }
-
-                    localStorage.setItem('activeAccount', JSON.stringify(account))
-
-                    experienceSection(account.experience)
-                    repositoriesSection(account.data)
-                    $("#cv_btn").attr("href", account.resume)
-
-                }).fail(error => console.error(error)).done(() => console.log('~ data loaded'))
-
-            },
-
-            error: (error) => {
-
-                if (!navigator.onLine) {
-                    console.log("( network offline )")
+                },
+                error : (error) => {
+                    console.error(error)
                 }
-                console.log(error)
-            },
-
-            complete: function () {
-                $("#experience #work .loader").hide()
+            })
+            localStorage.setItem("activeAccount", JSON.stringify(account))
+            
+            experienceSection(account.experience)
+            repositoriesSection(account.data)
+            $("#cv_btn").attr("href", account.resume)
+		
+        }).fail((error) => {
+          
+            if (!navigator.onLine) {
+                console.log("~ offline")
             }
+            console.error(error)
         })
     }
-    document.title = `Mayank`;
+    document.title = `Profile version-(2.0.0)`;
 })
 
 // developer Mayank | ( https://github.com/MayankDevil/ )
