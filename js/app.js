@@ -10,6 +10,7 @@ $(document).ready(function () {
     function unActiveAccount () {
 
         localStorage.removeItem('activeAccount')
+        localStorage.clear()
     }
     
     /*
@@ -78,23 +79,25 @@ $(document).ready(function () {
     */
     function repositoriesSection (data) { 
 
-        $.getJSON("data.json", (response) => {
+        if  (data === null) {
 
-            let repos_list = response // ["indardanus", "entitycode", "games", "mydata", "gupt", "livechat"]
+            console.log("~ active account data is nulld")
+            return 0
+        }
+        let repos_list = data // ["indardanus", "entitycode", "games", "mydata", "gupt", "livechat"]
+        
+        // repos_list = response.filter((repos) => repos_list.includes(repos.name.toLowerCase()))
+        
+        $.each(repos_list, function (index, element) {
             
-            // repos_list = response.filter((repos) => repos_list.includes(repos.name.toLowerCase()))
-            
-            $.each(repos_list, function (index, element) {
+            let repos = $(`<a href="${element.html_url}" title="Click For OPEN" data-id="${element.id}">`).addClass('repos').append(`
+                <div>
+                    <h4> ${element.name} </h4> 
+                    <p> ${element.description} </p>
+                    <span class="bi bi-github"></span>
+                </div>`)
                 
-                let repos = $(`<a href="${element.html_url}" title="Click For OPEN" data-id="${element.id}">`).addClass('repos').append(`
-                    <div>
-                        <h4> ${element.name} </h4> 
-                        <p> ${element.description} </p>
-                        <span class="bi bi-github"></span>
-                    </div>`)
-                    
-                $("#repositories").append(repos)
-            })
+            $("#repositories").append(repos)
         })
     }
 
@@ -106,7 +109,7 @@ $(document).ready(function () {
 
     let location = "https://mayankdevil.github.io/myData/public/api/admin.json";
     
-    let account = null
+    let account = null 
     
     if (localStorage.getItem('activeAccount')) 
     {
@@ -121,33 +124,28 @@ $(document).ready(function () {
     {
         $.getJSON(location).done(function (response) {
             
-            account = response.admin.find(a => a.username === 'Mayank')
-
-            console.log(account.data)
+            const ADMIN = response.admin.find(a => a.username === 'Mayank')
 
             $.ajax({
-                url : account.data,
+                url : ADMIN.data,
                 type : 'GET',
+
                 success : function (reposData) {
 
-                    console.log(reposData)
-
                     account = {
-                        resume: account.resume,
-                        experience: account.experience,
+                        resume: ADMIN.resume,
+                        experience: ADMIN.experience,
                         data: reposData,
                     }
+                    localStorage.setItem("activeAccount", JSON.stringify(account))
+
+                    experienceSection(account.experience)
+                    repositoriesSection(account.data)
+                    $("#cv_btn").attr("href", account.resume)
                 },
-                error : (error) => {
-                    console.error(error)
-                }
+                error : () => console.log(error)
             })
-            localStorage.setItem("activeAccount", JSON.stringify(account))
-            
-            experienceSection(account.experience)
-            repositoriesSection(account.data)
-            $("#cv_btn").attr("href", account.resume)
-		
+
         }).fail((error) => {
           
             if (!navigator.onLine) {
@@ -156,7 +154,7 @@ $(document).ready(function () {
             console.error(error)
         })
     }
-    document.title = `Profile version-(2.0.0)`;
+    document.title = `Protfolio "version-(2.0.0)"`;
 })
 
 // developer Mayank | ( https://github.com/MayankDevil/ )
